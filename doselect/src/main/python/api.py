@@ -29,7 +29,7 @@ def login():
         if request.form['key'] not in data.keys():
             error = 'Invalid Credentials. Please try again.'
         else:
-            return redirect(url_for('home'))
+            return redirect(url_for('upload'))
     return render_template('login.html', error=error)
 
 
@@ -91,3 +91,22 @@ def upload():
 
 if __name__ == "__main__":
     app.run(port=4555, debug=True)
+
+
+
+def f(n):
+   if n<=0:
+      return 0
+   return n + f(int(n/2))
+x = f(4)
+print x
+
+
+def a (b, c, d):
+    pass
+
+
+x =1
+b =1
+c =1
+a(x,b,c)
