@@ -122,7 +122,6 @@ def signup():
         if crc in data.keys():
             error = 'registered'
         else:
-            import pdb;pdb.set_trace()
             data[crc] = (request.form['username'], request.form['password'])
             data.update(data)
             image = os.path.join(image,crc)
